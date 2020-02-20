@@ -31,6 +31,7 @@ buildStore.sentence1('productName','price')//switch here
 
 // Switch any of these varibles to build your own store...
 // All below are found in the *commerce* section of fake api
+// Use these below!!!!
 // color
 // department
 // productName
