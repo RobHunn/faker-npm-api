@@ -12,12 +12,19 @@ const buildStore = {
                     },
                 sentence1: (product1,product2) => {
                 let sentence = [];
+                let paragraph = "";
+                product1 = product1.toLowerCase()
+                product2 = product2.toLowerCase()
                 for(i = 0; i <= 10 ; i++){
                 let g = faker.fake(`"{{commerce.${product1}}},{{commerce.${product2}}}"`);
                 let res = g.split(",");
                 let str1 = res[0];
                 let str2 = res[1];
-                let paragraph = `${str1} - $${str2}`;
+                if(product2 === 'price'){
+                    paragraph = `${str1} - $${str2}`;
+                }else{
+                    paragraph = `${str1} - ${str2}`;
+                }
                 sentence.push(paragraph);
                     } 
                     for(i = 0; i < sentence.length; i++){
@@ -27,7 +34,7 @@ const buildStore = {
                 }
 
 buildStore.header()
-buildStore.sentence1('productName','price')//switch here
+buildStore.sentence1('color','Price')//switch here
 
 // Switch any of these varibles to build your own store...
 // All below are found in the *commerce* section of fake api
