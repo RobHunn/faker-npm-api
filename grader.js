@@ -39,3 +39,20 @@ buildStore.sentence1('productName','price')//switch here
 // productAdjective
 // productMaterial
 // product
+
+
+// my example logs
+// ===================
+// Welcome to YOUR shop!
+// ===================
+// "Incredible Plastic Ball - $56.00"
+// "Handcrafted Frozen Sausages - $664.00"
+// "Generic Plastic Pizza - $604.00"
+// "Handmade Soft Gloves - $985.00"
+// "Ergonomic Metal Hat - $746.00"
+// "Fantastic Cotton Shoes - $514.00"
+// "Handmade Steel Bacon - $591.00"
+// "Intelligent Fresh Pants - $457.00"
+// "Incredible Wooden Cheese - $350.00"
+// "Awesome Plastic Mouse - $963.00"
+// "Gorgeous Cotton Bacon - $816.00"
